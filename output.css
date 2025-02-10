@@ -542,6 +542,9 @@
   .left-\[80\%\] {
     left: 80%;
   }
+  .z-10 {
+    z-index: 10;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -550,6 +553,9 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
   }
   .flex {
     display: flex;
@@ -562,6 +568,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .min-h-\[30rem\] {
+    min-height: 30rem;
   }
   .min-h-\[40rem\] {
     min-height: 40rem;
@@ -577,6 +586,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -645,11 +657,6 @@
       top: 20%;
     }
   }
-  .md\:top-\[30\%\] {
-    @media (width >= 48rem) {
-      top: 30%;
-    }
-  }
   .md\:top-\[70\%\] {
     @media (width >= 48rem) {
       top: 70%;
@@ -709,6 +716,19 @@ section {
   position: absolute;
   width: 5rem;
   animation: bounce 10s linear infinite;
+}
+.skill-icon {
+  width: calc(var(--spacing) * 16);
+}
+.dotted-bg {
+  position: absolute;
+  inset: calc(var(--spacing) * 0);
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-white);
+  background-image: radial-gradient(#e5e7eb 2px,transparent 1px);
+  background-size: 30px 30px;
+  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%,#000 60%,transparent 100%);
 }
 @keyframes bounce {
   0% {

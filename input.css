@@ -17,6 +17,14 @@ section {
   animation: bounce 10s linear infinite;
 }
 
+.skill-icon {
+  @apply w-16;
+}
+
+.dotted-bg {
+  @apply absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_2px,transparent_1px)] [background-size:30px_30px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)];
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
