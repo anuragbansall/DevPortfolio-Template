@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.nav-link {
+  @apply font-semibold text-lg opacity-50;
+}
+
+.active-link {
+  @apply opacity-100;
+}
+
+section {
+  @apply w-full py-6;
+}
