@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <main class="w-full container mx-auto px-8">
+      <nav class="flex justify-between items-center py-4">
+        <h1 class="text-xl font-semibold">Portfolio.</h1>
+        <ul class="hidden md:flex items-center gap-4">
+          <li><a href="#home" class="nav-link active-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="hero">
+        <div class="flex justify-between items-center">
+          <h2 class="font-semibold leading-tight">
+            Hello I am, <br />
+            <span class="text-4xl">Anurag</span>
+          </h2>
+          <h3 class="hidden md:block text-lg font-semibold">
+            [<span id="time">00:00</span>] ----------
+            <i class="text-slate-500">Full Stack Web Developer</i>
+          </h3>
+        </div>
+        <div class="w-full mt-8 md:px-8 h-[30rem]">
+          <img
+            src="./images/hero.jpg"
+            alt="Hero Image"
+            class="w-full h-full object-cover object-top"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>

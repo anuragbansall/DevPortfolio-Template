@@ -1,20 +1,2 @@
 # Node modules
 /node_modules/
-
-# Ignoring the compiled HTML file
-*.html
-
-# Ignoring JavaScript build outputs
-*.js
-
-# Ignoring any temporary files
-*.log
-*.tmp
-
-# IDE/Editor-specific files
-.vscode/
-.idea/
-
-# Operating system files
-.DS_Store
-Thumbs.db
