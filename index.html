@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <main class="w-full container mx-auto px-8">
-      <nav class="flex justify-between items-center py-4">
+    <main class="w-full max-w-[1280px] mx-auto px-5 md:px-20">
+      <nav class="flex justify-between items-center py-4 md:py-8">
         <h1 class="text-xl font-semibold">Portfolio.</h1>
         <ul class="hidden md:flex items-center gap-4">
           <li><a href="#home" class="nav-link active-link">Home</a></li>
@@ -19,21 +19,60 @@
       </nav>
       <section id="hero">
         <div class="flex justify-between items-center">
-          <h2 class="font-semibold leading-tight">
-            Hello I am, <br />
-            <span class="text-4xl">Anurag</span>
+          <h2 class="text-xl font-semibold leading-tight">
+            Hey, I am <br />
+            <span class="text-5xl text-bold">Anurag.</span>
           </h2>
           <h3 class="hidden md:block text-lg font-semibold">
-            [<span id="time">00:00</span>] ----------
-            <i class="text-slate-500">Full Stack Web Developer</i>
+            <span class="font-medium text-zinc-500">
+              [<span id="time">00:00</span>]
+            </span>
+            ----------
+            <i class="">Full Stack Web Developer</i>
           </h3>
         </div>
-        <div class="w-full mt-8 md:px-8 h-[30rem]">
+        <div class="w-full mt-8 h-[30rem]">
           <img
             src="./images/hero.jpg"
             alt="Hero Image"
             class="w-full h-full object-cover object-top"
           />
+        </div>
+      </section>
+      <section
+        id="about"
+        class="min-h-[40rem] relative flex flex-col items-center justify-center"
+      >
+        <img
+          src="./images/css.png"
+          alt="CSS Logo"
+          class="floating-icon left-[5%] md:left-[10%] top-[10%] md:top-[30%]"
+        />
+        <img
+          src="./images/html.png"
+          alt="HTML Logo"
+          class="floating-icon left-[2%] md:left-[20%] top-[80%] md:top-[70%]"
+        />
+        <img
+          src="./images/js.png"
+          alt="JS Logo"
+          class="floating-icon left-[65%] top-[80%] md:top-[75%]"
+        />
+        <img
+          src="./images/metaverse.png"
+          alt="Metaverse Logo"
+          class="floating-icon left-[80%] top-[15%] md:top-[20%]"
+        />
+        <div class="content text-center">
+          <h2 class="text-4xl font-semibold mb-6">
+            [ I design & build experiences ]
+          </h2>
+          <p class="max-w-[100ch] font-medium leading-relaxed">
+            I am a Full Stack Web Developer with a passion for building
+            beautiful and functional user experiences. I have experience working
+            with modern web technologies like React, Node.js, and MongoDB. I am
+            always eager to learn new technologies and improve my skills.
+          </p>
         </div>
       </section>
     </main>

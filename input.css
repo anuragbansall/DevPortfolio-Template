@@ -11,3 +11,17 @@
 section {
   @apply w-full py-6;
 }
+
+.floating-icon {
+  @apply absolute w-[5rem];
+  animation: bounce 10s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
