@@ -1,11 +1,12 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 .nav-link {
   @apply font-semibold text-lg opacity-50;
 }
 
 .active-link {
-  @apply opacity-100;
+  @apply opacity-100 dark:text-blue-400;
 }
 
 section {
@@ -22,7 +23,7 @@ section {
 }
 
 .dotted-bg {
-  @apply absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_2px,transparent_1px)] [background-size:30px_30px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)];
+  @apply absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_2px,transparent_1px)] [background-size:30px_30px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] dark:bg-transparent dark:bg-[radial-gradient(#555_2px,transparent_1px)];
 }
 
 @keyframes bounce {
