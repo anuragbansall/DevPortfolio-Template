@@ -49,6 +49,30 @@ section {
   @apply h-[25rem];
 }
 
+.project-card {
+  @apply w-full;
+}
+
+.project-card h2 {
+  @apply font-semibold text-4xl;
+}
+
+.project-card h3 {
+  @apply text-xl font-thin mt-2 mb-4;
+}
+
+.project-card .image {
+  @apply w-full h-[25rem] object-cover object-center overflow-hidden;
+}
+
+.project-card .image:hover img {
+  @apply scale-105 cursor-pointer;
+}
+
+.project-card img {
+  @apply w-full h-full object-cover object-center duration-300 ease-in-out;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
