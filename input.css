@@ -30,6 +30,25 @@ section {
   @apply absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_2px,transparent_1px)] [background-size:30px_30px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] dark:bg-transparent dark:bg-[radial-gradient(#555_2px,transparent_1px)];
 }
 
+.timeline-container {
+  @apply flex flex-wrap mt-8 justify-start items-center content-start;
+}
+
+.timeline-item {
+  @apply w-full sm:w-[30%] grow-1 m-4 bg-zinc-200 h-[30rem];
+}
+
+.timeline-item:nth-child(2) {
+  @apply h-[35rem];
+}
+
+.timeline-item:nth-child(3) {
+  @apply h-[25rem];
+}
+.timeline-item:nth-child(5) {
+  @apply h-[25rem];
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
