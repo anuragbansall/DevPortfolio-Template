@@ -669,6 +669,9 @@
   .bg-zinc-200 {
     background-color: var(--color-zinc-200);
   }
+  .bg-zinc-950 {
+    background-color: var(--color-zinc-950);
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -829,6 +832,11 @@
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .dark\:flex {
+    &:where(.dark, .dark *) {
+      display: flex;
     }
   }
   .dark\:bg-zinc-900 {
