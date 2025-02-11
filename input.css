@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+* {
+  scroll-behavior: smooth;
+}
+
 .nav-link {
   @apply font-semibold text-lg opacity-50;
 }
