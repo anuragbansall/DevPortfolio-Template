@@ -42,6 +42,11 @@ if (savedTheme) {
     themeIcon.classList.add('fa-moon');
     themeIcon.classList.remove('fa-sun');
   }
+}else{
+  body.classList.add('light');
+  localStorage.setItem('theme', 'light');
+  themeIcon.classList.add('fa-moon');
+  themeIcon.classList.remove('fa-sun');
 }
 
 themeToggle.addEventListener('click', () => {
